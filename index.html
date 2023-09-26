@@ -1,0 +1,61 @@
+<script>
+    export default {
+        data() {
+            return {
+                msg: 'Hello World!'
+            }
+        }
+    }
+</script>
+
+<template>
+    <!--<h1>{{ msg }}</h1>
+    <input v-model="msg"> -->
+    <div>
+        <table>
+            <form>
+                <tr>
+                    <td>Solution</td>
+                    <td>
+                        <select name="select">
+                            <option value="value1">Value 1</option>
+                            <option value="value2" selected>Value 2</option>
+                            <option value="value3">Value 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" id="tf_fn"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" id="tf_ln"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" id="rb_m" value="male" />
+                        <label for="rb_m">MAle</label>
+
+                        <input type="radio" id="rb_f" value="female" />
+                        <label for="rb_f">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of birth</td>
+                    <td><input type="date" id="tf_date"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea id="tf_address"></textarea></td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td><input type="submit" id="btn_submit"></td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</template>
